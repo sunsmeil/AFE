@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html 语义化标签</title>
+</head>
+<body>
+	<h1>网站一级标题</h1>
+	<nav>
+		<ul>
+			<li>
+				<a href="#">导航链接一</a>
+			</li>
+			<li>
+				<a href="#">导航链接二</a>
+			</li>
+			<li>
+				<a href="#"> 导航链接三</a>
+			</li>
+			<li>
+				<a href="#"> 导航链接四</a>
+			</li>
+		</ul>
+	</nav>
+	<article>
+		<header>
+			<h2>文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<address>文章作者</address>
+			<time pubdate>文章发表时间</time>
+		</header>
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
+		</br>
+		<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
+		</br>
+		<p>是一个很长很长的段落，这是一个很长很长的段落，这<a href="http://ife.baidu.com">链接到http://ife.baidu.com</a>是一个很长很长的段落，这是一个很长很长的段落，这</p>
+		<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="文章图片">
+		<ul>
+			<li>列表项目一</li>
+			<li>列表项目二</li>
+			<li>列表项目三</li>
+		</ul>
+	</article>
+	<section>
+		<h2>图片</h2>
+		<ul>
+			<li>
+				<h5>好看的图片</h5>
+				<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="文章图片">
+			</li>
+			<li>
+				<h5>好看的图片</h5>
+				<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="文章图片">
+			</li>
+			<li>
+				<h5>好看的图片</h5>
+				<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="文章图片">
+			</li>
+			<li>
+				<h5>好看的图片</h5>
+				<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="文章图片">
+			</li>
+		</ul>
+	</section>
+	<article>
+	 	<header>
+	 		<h2>最后一篇文章标题</h2>
+			<h3>文章二级标题</h3>
+			<address>文章作者</address>
+			<time pubdate>文章发表时间</time>
+	 	</header>
+
+		<table>
+			<caption>下面是一个表格</caption>
+			<thead>
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>表单内容单元格</td>
+					<td>表单内容单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr>
+					<td>表单内容单元格</td>
+					<td>表单内容单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr>
+					<td>表单内容单元格</td>
+					<td>表单内容单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr>
+					<td>表单内容单元格</td>
+					<td>表单内容单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>总计</td>
+					<td colspan = "2">1000</td>
+				</tr>
+			</tfoot>
+		</table>
+		<aside>
+			<h2>侧栏标题</h2>
+			<h2>侧栏注册窗口标题</h3>
+			<form>
+				<label for="email">请输入邮箱地址：</label>
+				<input type="email" name="email" placeholder="这是一个文本输入框">
+				<div>邮箱地址请按要求格式输入</div>
+
+				<label for="password">请输入密码：</label>
+				<input type="password" name="password" placeholder="这是一个文本输入框" pattern="^[a-zA-Z\d]{6,16}$">
+				<label for="repeatPassword">请重复输入密码：</label>
+				<input type="password" name="repeatPassword" placeholder="这是一个文本输入框" pattern="^[a-zA-Z\d]{6,16}$">
+				<div>密码请为6-16位英文数字</div>
+
+				<label for="sex">性别：</label>
+				<input type="radio" name="sex" value="male"  checked="checked">
+				<span>男</span>
+				<input type="radio" name="sex" value="lady" >
+				<span>女</span>
+
+				<label for="city">城市：</label>
+				<select name="city">
+					<option value="beijing">北京</option>
+				</select>
+
+				<label for="like">爱好</label>
+				<input type="checkbox" name="exercise" value="exercise"  checked="checked">
+				<span>运动</span>
+				<input type="checkbox" name="art" value="art" >
+				<span>艺术</span>
+				<input type="checkbox" name="science" value="science" >
+				<span>科学</span>
+
+				<label for="direction">个人描述</label>
+				<textarea name="direction" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+				<button type="submit">确认提交</button>
+			</form>
+		</aside>
+	</article>
+	<footer>
+		<p>版权所有©</p>
+	</footer>
+</body>
+</html>
