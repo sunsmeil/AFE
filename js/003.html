@@ -41,14 +41,12 @@ function getData() {
   var source = document.getElementById("source");
   var data = [];
   for (var i = 0; i < source.childNodes.length; i++) {
-    if ( source.childNodes[i].nodeName == 'LI') {
+    if ( source.childNodes[i].innerHTML != undefined) {
       var str = source.childNodes[i].innerHTML;
       var city = str.slice(0,2);
-      var num = str.split("<b>")[1].split("</b>")[0];
-      var ary = [];
-      ary[0] = city;
-      ary[1] = Number(num);
-      data.push(ary);
+      var num =  source.childNodes[i].childNodes[1].innerHTML ;
+
+      data.push([city,num]);
     }
   }
   console.log(data)
